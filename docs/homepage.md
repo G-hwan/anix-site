@@ -53,6 +53,26 @@
 
 ---
 
+## Working Files
+
+- `index.html`
+- `styles.css`
+- `script.js`
+
+현재 홈페이지 수정은 위 3개 파일을 중심으로 반영되어 있습니다.
+
+---
+
+## Next Work Candidates
+
+- 실제 작업 샘플 이미지 또는 영상 썸네일 연결
+- 포트폴리오 전용 페이지 추가
+- Contact 입력 폼 또는 외부 문의 링크 구조화
+- 다국어 대응용 콘텐츠 분리
+- GitHub Pages 기준 SEO 메타 태그와 Open Graph 보강
+
+---
+
 ## Display Mode
 
 - 헤더 우측 `Invert` 토글로 반전 모드 전환 가능
