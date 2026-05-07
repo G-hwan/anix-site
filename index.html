@@ -6,12 +6,12 @@
     <title>ANIX | Animation Compositing Studio</title>
     <meta
       name="description"
-      content="ANIX는 2D 애니메이션 촬영, 게임 PV, 스킬 영상, 고퀄리티 After Effects 합성을 전문으로 하는 비주얼 크리에이션 스튜디오입니다."
+      content="ANIX는 2D 애니메이션 촬영, 게임 PV, 스킬 영상, After Effects 기반 합성과 자동화 파이프라인을 다루는 비주얼 크리에이션 스튜디오입니다."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=SUIT:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -19,38 +19,60 @@
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="ANIX 홈">
-        <span class="brand-symbol">A</span>
+        <span class="brand-symbol" aria-hidden="true"></span>
         <span class="brand-text">ANIX</span>
       </a>
-      <nav aria-label="주요 메뉴">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#vision">Vision</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-actions">
+        <nav aria-label="주요 메뉴">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#samples">Samples</a>
+          <a href="#pipeline">Pipeline</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="mode-toggle" type="button" aria-label="화면 모드 반전">
+          <span class="mode-toggle-track" aria-hidden="true">
+            <span class="mode-toggle-thumb"></span>
+          </span>
+          <span class="mode-toggle-label">Invert</span>
+        </button>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="cinema-light" aria-hidden="true"></div>
-        <div class="hero-copy">
-          <p class="eyebrow">Animation Shooting / Compositing Studio</p>
-          <h1>ANIX Animation Compositing Studio</h1>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">2D Animation Compositing Studio</p>
+          <h1>Scene Impact, Finished by Compositing.</h1>
           <p class="hero-lead">
-            ANIX는 애니메이션 컷에 빛, 색, FX, 카메라워크를 더해 장면의 감정과 밀도를 완성합니다.
-            중국 애니메이션 촬영부터 게임 PV, 스킬 영상까지 2D 합성의 마지막 인상을 설계합니다.
+            ANIX는 2D 애니메이션 촬영과 합성을 중심으로, 게임 PV와 스킬 영상까지 장면의 밀도와
+            감정을 최종 완성하는 스튜디오입니다.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#contact">프로젝트 문의</a>
-            <a class="button secondary" href="#services">작업 분야 보기</a>
+            <a class="button secondary" href="#samples">작업 샘플 보기</a>
           </div>
+          <ul class="hero-metrics" aria-label="ANIX 핵심 가치">
+            <li>
+              <strong>Visual</strong>
+              <span>고퀄리티 비주얼과 시네마틱 연출</span>
+            </li>
+            <li>
+              <strong>Pipeline</strong>
+              <span>After Effects 기반 자동화 워크플로</span>
+            </li>
+            <li>
+              <strong>Scope</strong>
+              <span>애니메이션, 게임 PV, 스킬 컷신 제작</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="hero-visual" aria-label="ANIX 애니메이션 합성 비주얼">
+        <div class="hero-panel reveal" aria-label="ANIX 작업 개요">
           <div class="visual-header">
-            <span>CUT_024_COMPOSITE</span>
-            <span>LIGHT / FX / CAMERA</span>
+            <span>ANIX / LIVE COMPOSITE BOARD</span>
+            <span>24FPS / FINAL GRADE</span>
           </div>
           <div class="composition-frame">
             <div class="title-line title-line-top"></div>
@@ -65,123 +87,212 @@
             <div class="camera-safe"></div>
             <div class="focus-mark"></div>
           </div>
+          <div class="hero-status">
+            <article>
+              <span class="status-label">Main Works</span>
+              <strong>중국 애니메이션, 게임 PV, 스킬 영상</strong>
+            </article>
+            <article>
+              <span class="status-label">Studio Direction</span>
+              <strong>Premium, Futuristic, Anime Compositing Aesthetics</strong>
+            </article>
+          </div>
           <div class="visual-footer">
-            <span>BG / Character / FX / Grade</span>
-            <span>24FPS / FINAL CHECK</span>
+            <span>BG / Character / FX / Camera / Grade</span>
+            <span>ani + x = infinite visual possibility</span>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section about">
-        <div class="section-kicker">
+      <section id="about" class="section intro">
+        <div class="section-kicker reveal">
           <p class="eyebrow">About</p>
-          <h2>애니메이션 컷의 분위기와 타격감을 완성합니다.</h2>
+          <h2>ANIX는 장면의 마지막 인상을 설계합니다.</h2>
         </div>
-        <div class="about-copy">
-          <p>
-            ANIX는 2D 애니메이션 촬영/합성을 중심으로 컷의 공간감, 캐릭터의 존재감, 이펙트의 리듬을
-            정교하게 다듬는 스튜디오입니다.
-          </p>
-          <p>
-            중국 애니메이션 프로젝트, 게임 PV, 스킬 영상, After Effects 합성 경험을 바탕으로
-            장면이 더 선명하게 기억되도록 마무리합니다.
-          </p>
+        <div class="intro-grid">
+          <article class="intro-card reveal">
+            <p>
+              ANIX는 2D 애니메이션 촬영/합성 전문 스튜디오입니다. 캐릭터, 배경, FX, 카메라워크,
+              색감의 균형을 정리해 컷의 감정선과 타격감을 더 선명하게 만듭니다.
+            </p>
+          </article>
+          <article class="intro-card reveal">
+            <p>
+              문서에 정의된 철학처럼 고퀄리티 비주얼, 미래적인 스타일, 감각적인 합성, 자동화 기반
+              파이프라인을 핵심 경쟁력으로 삼습니다.
+            </p>
+          </article>
+          <article class="intro-card reveal philosophy-card">
+            <p class="mini-label">Philosophy</p>
+            <ul class="tag-list">
+              <li>High Quality Visual</li>
+              <li>Cinematic Staging</li>
+              <li>Futuristic Tone</li>
+              <li>Sensory Compositing</li>
+              <li>Automation Pipeline</li>
+            </ul>
+          </article>
         </div>
       </section>
 
       <section id="services" class="section">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">Services</p>
-          <h2>장면의 완성도를 높이는 합성 작업.</h2>
+          <h2>장면의 완성도를 높이는 네 가지 코어 서비스.</h2>
         </div>
         <div class="service-grid">
-          <article>
+          <article class="reveal">
             <span>01</span>
             <h3>2D Animation Compositing</h3>
-            <p>캐릭터, 배경, FX, 라이트, 색감을 하나의 컷 안에서 자연스럽게 연결합니다.</p>
+            <p>애니메이션 촬영 및 합성 중심으로 컷의 밀도, 깊이, 빛의 흐름을 정리합니다.</p>
           </article>
-          <article>
+          <article class="reveal">
             <span>02</span>
             <h3>Game PV</h3>
-            <p>캐릭터의 매력과 세계관의 분위기가 짧은 시간 안에 전달되도록 연출합니다.</p>
+            <p>짧은 러닝타임 안에서 캐릭터의 매력과 세계관의 인상을 강하게 남기는 프로모션 영상을 제작합니다.</p>
           </article>
-          <article>
+          <article class="reveal">
             <span>03</span>
             <h3>Skill Movie</h3>
-            <p>스킬 발동, 타격, 폭발, 잔광의 리듬을 조율해 강한 인상을 만듭니다.</p>
+            <p>스킬 컷신과 액션 영상에서 타격감, 속도감, 잔광과 폭발의 리듬을 조율합니다.</p>
           </article>
-          <article>
+          <article class="reveal">
             <span>04</span>
-            <h3>AE Composite Workflow</h3>
-            <p>After Effects 기반으로 컷 관리와 반복 합성 작업을 정리해 안정적인 제작 흐름을 만듭니다.</p>
+            <h3>AE Pipeline Automation</h3>
+            <p>After Effects 자동화와 반복 제작 효율화를 통해 빠른 수정 대응과 안정적인 납품 흐름을 만듭니다.</p>
           </article>
         </div>
       </section>
 
-      <section id="workflow" class="section workflow">
-        <div class="section-head">
-          <p class="eyebrow">Workflow</p>
-          <h2>컷을 읽고, 분위기를 잡고, 완성도를 쌓아갑니다.</h2>
+      <section id="samples" class="section samples">
+        <div class="section-head reveal">
+          <p class="eyebrow">Samples</p>
+          <h2>ANIX가 다루는 작업 샘플 포맷.</h2>
         </div>
-        <ol class="workflow-list">
-          <li>
-            <strong>프로젝트 상담</strong>
-            <span>작품 톤, 컷 수, 일정, 레퍼런스를 확인합니다.</span>
-          </li>
-          <li>
-            <strong>컷 분석</strong>
-            <span>캐릭터, 배경, FX 소스를 보고 합성 방향을 정리합니다.</span>
-          </li>
-          <li>
-            <strong>합성/촬영</strong>
-            <span>라이트, 색, 이펙트, 카메라워크를 컷에 맞게 적용합니다.</span>
-          </li>
-          <li>
-            <strong>검수</strong>
-            <span>작화, 잔상, 색감, 타이밍을 컷별로 확인합니다.</span>
-          </li>
-          <li>
-            <strong>납품</strong>
-            <span>요청 포맷에 맞춰 최종 파일을 전달합니다.</span>
-          </li>
-        </ol>
+        <div class="sample-grid">
+          <article class="sample-card reveal">
+            <div class="sample-frame frame-animation"></div>
+            <div>
+              <p class="mini-label">Animation Shot</p>
+              <h3>레이어가 많은 컷도 명확한 중심과 깊이감으로 정리합니다.</h3>
+            </div>
+          </article>
+          <article class="sample-card reveal">
+            <div class="sample-frame frame-pv"></div>
+            <div>
+              <p class="mini-label">Game PV</p>
+              <h3>브랜드 무드와 캐릭터 임팩트를 동시에 전달하는 쇼트 구성을 설계합니다.</h3>
+            </div>
+          </article>
+          <article class="sample-card reveal">
+            <div class="sample-frame frame-skill"></div>
+            <div>
+              <p class="mini-label">Skill Movie</p>
+              <h3>타격 포인트와 FX 타이밍을 강조해 기억에 남는 액션 컷을 만듭니다.</h3>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <section id="vision" class="section vision">
-        <div>
+      <section id="pipeline" class="section pipeline">
+        <div class="pipeline-copy reveal">
+          <p class="eyebrow">Pipeline</p>
+          <h2>작업 자동화와 고퀄리티 유지를 동시에 가져가는 제작 흐름.</h2>
+          <ol class="workflow-list">
+            <li>
+              <strong>프로젝트 상담</strong>
+              <span>작품 톤, 컷 수, 일정, 레퍼런스를 기준으로 범위를 명확히 정리합니다.</span>
+            </li>
+            <li>
+              <strong>컷 분석</strong>
+              <span>소스 구조와 연출 의도를 보고 빛, FX, 카메라, 색감 방향을 잡습니다.</span>
+            </li>
+            <li>
+              <strong>촬영 / 합성 진행</strong>
+              <span>After Effects 중심으로 장면의 리듬과 깊이를 완성하고 자동화 요소를 적용합니다.</span>
+            </li>
+            <li>
+              <strong>수정 및 검수</strong>
+              <span>빠른 수정 대응과 컷별 퀄리티 체크로 완성도를 다듬습니다.</span>
+            </li>
+            <li>
+              <strong>최종 납품</strong>
+              <span>요청 포맷에 맞춘 납품과 후반 관리까지 안정적으로 연결합니다.</span>
+            </li>
+          </ol>
+        </div>
+        <div class="pipeline-side">
+          <article class="tool-card reveal">
+            <p class="mini-label">Main Tools</p>
+            <ul class="tool-list">
+              <li>Adobe After Effects</li>
+              <li>Photoshop</li>
+              <li>Blender</li>
+              <li>AI Tools</li>
+              <li>Custom AE Scripts</li>
+              <li>JavaScript / ExtendScript</li>
+            </ul>
+          </article>
+          <article class="tool-card reveal">
+            <p class="mini-label">Pipeline Goals</p>
+            <ul class="tool-list">
+              <li>작업 자동화</li>
+              <li>빠른 수정 대응</li>
+              <li>효율적 렌더 관리</li>
+              <li>고퀄리티 유지</li>
+              <li>AI Video Pipeline 확장</li>
+              <li>Cloud Rendering 준비</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section vision">
+        <div class="reveal">
           <p class="eyebrow">Vision</p>
-          <h2>작품의 마지막 인상을 책임지는 합성 전문 스튜디오.</h2>
+          <h2>합성 전문 스튜디오에서 오리지널 비주얼 IP까지 확장합니다.</h2>
         </div>
         <div class="vision-grid">
-          <article>
+          <article class="reveal">
             <h3>Original IP</h3>
-            <p>ANIX만의 캐릭터 감각과 애니메이션 비주얼 언어를 쌓아갑니다.</p>
+            <p>ANIX만의 비주얼 언어와 캐릭터 감각을 축적해 자체 프로젝트로 확장합니다.</p>
           </article>
-          <article>
+          <article class="reveal">
             <h3>Global Market</h3>
-            <p>중국 애니메이션과 해외 프로젝트 경험을 바탕으로 더 넓은 제작 시장과 연결됩니다.</p>
+            <p>중국 애니메이션 경험을 기반으로 해외 제작 파트너와 연결되는 스튜디오를 지향합니다.</p>
           </article>
-          <article>
-            <h3>High Quality Compositing</h3>
-            <p>빛, FX, 색감, 카메라워크를 섬세하게 다루는 고퀄리티 합성을 핵심 경쟁력으로 키웁니다.</p>
+          <article class="reveal">
+            <h3>AI Driven Production</h3>
+            <p>AI 기반 제작 파이프라인과 자동화 시스템을 적극적으로 도입해 더 빠르고 정교한 합성을 준비합니다.</p>
           </article>
         </div>
       </section>
 
-      <section id="contact" class="contact">
-        <p class="eyebrow">Contact</p>
-        <h2>애니메이션 컷의 마지막 완성도를 함께 만들어보세요.</h2>
-        <p>
-          작업 범위, 일정, 참고 영상, 컷 수를 함께 보내주시면 제작 방향과 진행 방식을 빠르게 검토하겠습니다.
-        </p>
-        <a class="button primary" href="mailto:hello@anix.studio">hello@anix.studio</a>
+      <section id="contact" class="contact reveal">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>작업 범위와 일정이 정리돼 있다면, ANIX는 바로 제작 구조를 제안할 수 있습니다.</h2>
+          <p>
+            컷 수, 일정, 참고 영상, 원하는 무드와 납품 포맷을 함께 보내주시면 제작 방향과 대응 가능한
+            워크플로를 빠르게 검토합니다.
+          </p>
+        </div>
+        <div class="contact-card">
+          <p class="mini-label">Project Intake</p>
+          <ul class="contact-list">
+            <li>Animation Compositing</li>
+            <li>Game PV / Skill Movie</li>
+            <li>AE Workflow Automation</li>
+          </ul>
+          <a class="button primary" href="mailto:hello@anix.studio">hello@anix.studio</a>
+        </div>
       </section>
     </main>
 
     <footer>
       <span>ANIX</span>
       <span>2D Animation Compositing Studio</span>
-      <span>ani + x = infinite visual possibility</span>
+      <span>Premium cinematic compositing with automation pipeline</span>
     </footer>
 
     <script src="script.js"></script>
