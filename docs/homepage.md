@@ -86,3 +86,9 @@
 - Repository: `https://github.com/G-hwan/anix-site`
 - Live URL: `https://g-hwan.github.io/anix-site/`
 - 배포 방식: `main` 브랜치 푸시 후 GitHub Pages 반영
+
+---
+
+## Handoff Reference
+
+- 작업 시작용 체크리스트와 규칙은 `docs/working_rules.md` 참고
