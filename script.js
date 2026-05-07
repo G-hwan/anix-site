@@ -1,21 +1,23 @@
 const header = document.querySelector(".site-header");
+const visual = document.querySelector(".hero-visual");
 
-const setHeaderState = () => {
-  header.classList.toggle("is-scrolled", window.scrollY > 24);
+const updateHeader = () => {
+  header.classList.toggle("is-scrolled", window.scrollY > 20);
 };
 
-setHeaderState();
-window.addEventListener("scroll", setHeaderState, { passive: true });
+if (visual) {
+  visual.addEventListener("pointermove", (event) => {
+    const rect = visual.getBoundingClientRect();
+    const x = ((event.clientX - rect.left) / rect.width - 0.5) * 6;
+    const y = ((event.clientY - rect.top) / rect.height - 0.5) * 6;
 
-document.querySelectorAll(".work-visual, .frame").forEach((item) => {
-  item.addEventListener("pointermove", (event) => {
-    const rect = item.getBoundingClientRect();
-    const x = ((event.clientX - rect.left) / rect.width - 0.5) * 8;
-    const y = ((event.clientY - rect.top) / rect.height - 0.5) * 8;
-    item.style.transform = `perspective(900px) rotateX(${-y}deg) rotateY(${x}deg)`;
+    visual.style.transform = `perspective(1000px) rotateX(${-y}deg) rotateY(${x}deg)`;
   });
 
-  item.addEventListener("pointerleave", () => {
-    item.style.transform = "";
+  visual.addEventListener("pointerleave", () => {
+    visual.style.transform = "";
   });
-});
+}
+
+updateHeader();
+window.addEventListener("scroll", updateHeader, { passive: true });
